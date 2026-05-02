@@ -2,7 +2,7 @@
 //  ScreenTimeMetricEditorControl.swift
 //  Moodi
 //
-//  Created by OpenAI on 02.05.2026.
+//  Created by Никита Сторчай on 02.05.2026.
 //
 
 import SwiftUI

@@ -2,7 +2,7 @@
 //  TodayHeaderView.swift
 //  Moodi
 //
-//  Created by OpenAI on 02.05.2026.
+//  Created by Никита Сторчай on 02.05.2026.
 //
 
 import SwiftUI
@@ -12,18 +12,13 @@ struct TodayHeaderView: View {
 
     var body: some View {
         VStack(alignment: .leading, spacing: 8) {
-            Text("Today")
-                .font(.headline)
+            Text("How are you feeling?")
+                .font(.title3)
                 .foregroundStyle(.secondary)
-
             Text(date, format: .dateTime.weekday(.wide).month(.wide).day())
                 .font(.largeTitle)
                 .bold()
                 .foregroundStyle(.primary)
-
-            Text("How are you feeling?")
-                .font(.title3)
-                .foregroundStyle(.secondary)
         }
         .accessibilityElement(children: .combine)
     }

@@ -2,12 +2,12 @@
 //  TodayMood.swift
 //  Moodi
 //
-//  Created by OpenAI on 02.05.2026.
+//  Created by Никита Сторчай on 02.05.2026.
 //
 
 import SwiftUI
 
-enum TodayMood: String, CaseIterable, Identifiable {
+enum TodayMood: String, CaseIterable, Identifiable, Codable, Sendable {
     case sad
     case neutral
     case happy

@@ -2,7 +2,7 @@
 //  MoodiUI.swift
 //  Moodi
 //
-//  Created by OpenAI on 02.05.2026.
+//  Created by Никита Сторчай on 02.05.2026.
 //
 
 import CoreGraphics
@@ -17,6 +17,6 @@ enum MoodiUI {
     static let heroCornerRadius: CGFloat = 30
     static let cardCornerRadius: CGFloat = 28
     static let tileCornerRadius: CGFloat = 22
-    static let heroMinHeight: CGFloat = 220
+    static let heroMinHeight: CGFloat = 210
     static let tileMinHeight: CGFloat = 120
 }
