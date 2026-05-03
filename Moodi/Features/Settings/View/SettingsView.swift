@@ -21,7 +21,6 @@ struct SettingsView: View {
                     SettingsPrivacyCard()
                     appearanceSection
                     dataSourcesSection
-//                    SettingsPrivacyCard()
                     deleteDataSection
                 }
                 .padding(.horizontal, MoodiUI.screenPadding)

@@ -113,6 +113,65 @@ enum TodayMood: String, CaseIterable, Identifiable, Codable, Sendable {
         }
     }
 
+    func calendarGradientColors(for colorScheme: ColorScheme) -> [Color] {
+        switch self {
+        case .sad:
+            switch colorScheme {
+            case .light:
+                [
+                    Color(red: 0.29, green: 0.46, blue: 0.92),
+                    Color(red: 0.18, green: 0.34, blue: 0.76)
+                ]
+            case .dark:
+                [
+                    Color(red: 0.16, green: 0.28, blue: 0.56),
+                    Color(red: 0.10, green: 0.21, blue: 0.44)
+                ]
+            @unknown default:
+                [
+                    Color(red: 0.29, green: 0.46, blue: 0.92),
+                    Color(red: 0.18, green: 0.34, blue: 0.76)
+                ]
+            }
+        case .neutral:
+            switch colorScheme {
+            case .light:
+                [
+                    Color(red: 0.61, green: 0.58, blue: 0.82),
+                    Color(red: 0.47, green: 0.50, blue: 0.72)
+                ]
+            case .dark:
+                [
+                    Color(red: 0.28, green: 0.29, blue: 0.46),
+                    Color(red: 0.22, green: 0.24, blue: 0.39)
+                ]
+            @unknown default:
+                [
+                    Color(red: 0.61, green: 0.58, blue: 0.82),
+                    Color(red: 0.47, green: 0.50, blue: 0.72)
+                ]
+            }
+        case .happy:
+            switch colorScheme {
+            case .light:
+                [
+                    Color(red: 0.97, green: 0.63, blue: 0.56),
+                    Color(red: 0.86, green: 0.43, blue: 0.62)
+                ]
+            case .dark:
+                [
+                    Color(red: 0.52, green: 0.27, blue: 0.30),
+                    Color(red: 0.42, green: 0.20, blue: 0.33)
+                ]
+            @unknown default:
+                [
+                    Color(red: 0.97, green: 0.63, blue: 0.56),
+                    Color(red: 0.86, green: 0.43, blue: 0.62)
+                ]
+            }
+        }
+    }
+
     func pillFillColor(for colorScheme: ColorScheme) -> Color {
         switch colorScheme {
         case .light:
