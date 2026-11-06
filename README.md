@@ -2,6 +2,8 @@
 A **privacy-first, on-device AI-powered mood tracking app for iOS** built with **SwiftUI**, **SwiftData**, **Charts**, **Core ML**, **HealthKit**, and **Screen Time APIs**.  
 Track your **daily behavioral signals**, receive **on-device mood predictions**, and explore your **emotional patterns over time** through a calm, premium iOS experience.
 
+> 🎓 **Research project (2026).** This app is the practical part of my research on methods of personalized mood prediction with Core ML: whether everyday behavioural signals (sleep, steps, activity and screen time) can predict a person's mood on the device, without sending any data to a server.
+
 ---
 
 ### 📌 Short Description
